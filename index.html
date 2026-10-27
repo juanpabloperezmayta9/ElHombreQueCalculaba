@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>El Hombre que Calculaba</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>El Hombre que Calculaba</h1>
+        <p>Matemáticas, lógica y programación</p>
+    </header>
+
+    <main>
+ 
+        <!-- EJERCICIO 1 -->
+        <section class="tarjeta">
+
+            <h2>Ejercicio 1: Raíces de una ecuación</h2>
+
+            <p class="descripcion">
+                Calcula las raíces reales de una ecuación cuadrática
+                de la forma ax² + bx + c = 0.
+            </p>
+
+            <h3>Descripción</h3>
+
+            <p>
+                El programa solicita los valores de a, b y c.
+                Después calcula el discriminante para determinar
+                cuántas raíces reales tiene la ecuación.
+            </p>
+
+            <h3>Algoritmo</h3>
+
+            <ol>
+                <li>Ingresar los valores de a, b y c.</li>
+                <li>Comprobar que a sea diferente de cero.</li>
+                <li>Calcular D = b² - 4ac.</li>
+                <li>Si D es mayor que cero, calcular dos raíces.</li>
+                <li>Si D es igual a cero, calcular una raíz.</li>
+                <li>Si D es menor que cero, no existen raíces reales.</li>
+                <li>Mostrar el resultado en la página.</li>
+            </ol>
+
+            <h3>Entrada de datos</h3>
+
+            <form id="formRaices">
+
+                <label for="a">Valor de a:</label>
+                <input type="number" id="a" step="any"
+                       placeholder="Ejemplo: 3" required>
+
+                <label for="b">Valor de b:</label>
+                <input type="number" id="b" step="any"
+                       placeholder="Ejemplo: 6" required>
+
+                <label for="c">Valor de c:</label>
+                <input type="number" id="c" step="any"
+                       placeholder="Ejemplo: 3" required>
+
+                <button type="submit">Calcular raíces</button>
+
+            </form>
+
+            <h3>Salida de datos</h3>
+
+            <div id="resultadoRaices" class="resultado"
+                 aria-live="polite">
+                Aquí aparecerán las raíces.
+            </div>
+
+        </section>
+
+
+        <!-- EJERCICIO 2 -->
+        <section class="tarjeta">
+
+            <h2>Ejercicio 2: Sumatoria para aproximar π</h2>
+
+            <p class="descripcion">
+                Utiliza una sumatoria matemática para aproximar
+                el valor del número pi.
+            </p>
+
+            <h3>Descripción</h3>
+
+            <p>
+                El programa solicita un número entero positivo N.
+                Mediante un ciclo for, suma los valores de 1/n²,
+                desde n = 1 hasta N. Finalmente, calcula la raíz
+                cuadrada de seis veces la sumatoria.
+            </p>
+
+            <p class="formula">
+                π ≈ √(6 × Σ 1/n²)
+            </p>
+
+            <h3>Algoritmo</h3>
+
+            <ol>
+                <li>Ingresar el valor de N.</li>
+                <li>Inicializar la sumatoria en cero.</li>
+                <li>Repetir un ciclo for desde 1 hasta N.</li>
+                <li>Sumar 1/n² en cada repetición.</li>
+                <li>Multiplicar la sumatoria por 6.</li>
+                <li>Calcular la raíz cuadrada del resultado.</li>
+                <li>Mostrar la aproximación de pi.</li>
+            </ol>
+
+            <h3>Entrada de datos</h3>
+
+            <form id="formPi">
+
+                <label for="n">
+                    Número de términos de la sumatoria:
+                </label>
+
+                <input type="number" id="n" min="1" max="1000000"
+                       step="1" placeholder="Ejemplo: 100"
+                       required>
+
+                <button type="submit">Calcular pi</button>
+
+            </form>
+
+            <h3>Salida de datos</h3>
+
+            <div id="resultadoPi" class="resultado"
+                 aria-live="polite">
+                Aquí aparecerá la aproximación de pi.
+            </div>
+
+        </section>
+
+
+
+
+
+        
+<section class="tarjeta">
+
+    <h2>Ejercicio 5: Las joyas del mercader</h2>
+
+    <h3>Descripción</h3>
+
+    <p>
+        Un mercader desea repartir sus joyas entre dos herederos.
+        El programa calcula las cantidades según los porcentajes
+        introducidos por el usuario.
+    </p>
+
+    <h3>Algoritmo</h3>
+
+    <ol>
+        <li>Ingresar el total de joyas.</li>
+        <li>Ingresar los porcentajes de los dos herederos.</li>
+        <li>Comprobar que los porcentajes sean válidos.</li>
+        <li>Calcular la cantidad para cada heredero.</li>
+        <li>Mostrar las cantidades y el sobrante.</li>
+    </ol>
+
+    <h3>Entrada de datos</h3>
+
+    <form id="formJoyas">
+
+        <label for="totalJoyas">Total de joyas:</label>
+        <input type="number" id="totalJoyas"
+               min="0" step="1" value="100" required>
+
+        <label for="porcentaje1">
+            Porcentaje del primer heredero:
+        </label>
+        <input type="number" id="porcentaje1"
+               min="0" max="100" step="1" value="40" required>
+
+        <label for="porcentaje2">
+            Porcentaje del segundo heredero:
+        </label>
+        <input type="number" id="porcentaje2"
+               min="0" max="100" step="1" value="30" required>
+
+        <button type="submit">Calcular reparto</button>
+
+    </form>
+
+    <h3>Salida de datos</h3>
+
+    <div id="resultadoJoyas" class="resultado">
+        Aquí aparecerá el resultado.
+    </div>
+
+</section>
+
+
+
+<section class="tarjeta">
+
+    <h2>Ejercicio 6: El desafío de los números</h2>
+
+    <h3>Descripción</h3>
+
+    <p>
+        Beremiz debe analizar una serie de números.
+        El programa suma todos los números pares desde 1
+        hasta el límite que introduce el usuario.
+    </p>
+
+    <h3>Algoritmo</h3>
+
+    <ol>
+        <li>Ingresar el límite superior.</li>
+        <li>Inicializar la suma y el contador en cero.</li>
+        <li>Recorrer los números con un ciclo for.</li>
+        <li>Comprobar si cada número es par.</li>
+        <li>Sumar los pares y contar cuántos hay.</li>
+        <li>Mostrar los resultados.</li>
+    </ol>
+
+    <h3>Entrada de datos</h3>
+
+    <form id="formNumeros">
+
+        <label for="limite">Número límite:</label>
+
+        <input type="number" id="limite"
+               min="1" max="100000" step="1"
+               placeholder="Ejemplo: 10" required>
+
+        <button type="submit">Resolver desafío</button>
+
+    </form>
+
+    <h3>Salida de datos</h3>
+
+    <div id="resultadoNumeros" class="resultado">
+        Aquí aparecerá la suma de los pares.
+    </div>
+
+</section>
+
+
+    </main>
+
+    <footer>
+        <p>Proyecto educativo de HTML, CSS y JavaScript</p>
+        <p>Aprendiendo a calcular como Beremiz Samir</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

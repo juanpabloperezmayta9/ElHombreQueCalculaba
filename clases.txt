@@ -1,0 +1,8 @@
+para encontrar raices
+sumatoria
+el hombre que calculaba para resolverlos por js
+comandos sencilllos y basicos usar formularios
+una descripcion un algoritmo una entrada de datos y una salida
+el prograa debe ser general no solo para este problema
+2 ejercicios por persona
+del hombre que calulaba con css de acuerdo al tema con el DOM

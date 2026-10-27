@@ -1,0 +1,137 @@
+
+/* DISEÑO GENERAL */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3e5c8;
+    color: #3e2b1f;
+} 
+
+/* ENCABEZADO */
+
+header {
+    background-color: #5c3825;
+    color: #fff2d5;
+    text-align: center;
+    padding: 25px;
+    border-bottom: 5px solid #c49a45;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+/* CONTENIDO */
+
+main {
+    width: 90%;
+    max-width: 850px;
+    margin: 30px auto;
+}
+
+/* TARJETAS */
+
+.tarjeta {
+    background-color: #fffaf0;
+    padding: 25px;
+    margin-bottom: 30px;
+    border: 2px solid #c49a45;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px #00000020;
+}
+
+/* TITULOS */
+
+h2 {
+    color: #754321;
+    border-bottom: 2px solid #c49a45;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #8b5a2b;
+}
+
+/* DESCRIPCIONES Y LISTAS */
+
+p {
+    line-height: 1.6;
+}
+
+ol {
+    line-height: 1.8;
+}
+
+/* FORMULARIOS */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #b89b76;
+    border-radius: 6px;
+}
+
+/* BOTONES */
+
+button {
+    background-color: #754321;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a16b32;
+}
+
+/* RESULTADOS */
+
+.resultado {
+    background-color: #f3e5c8;
+    border-left: 5px solid #c49a45;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+/* PIE DE PAGINA */
+
+footer {
+    background-color: #5c3825;
+    color: #fff2d5;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ADAPTACION A CELULARES */
+
+@media (max-width: 600px) {
+    main {
+        width: 94%;
+    }
+
+    .tarjeta {
+        padding: 16px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+}
